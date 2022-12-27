@@ -15,5 +15,6 @@ class Scoreboard(Turtle):
 
     def update_scoreboard(self):
         self.clear()
+        self.level += 1
         self.goto(-100, 250)
-        self.write(f"Level: {self.level+1}", align=ALIGNMENT, font=FONT)
+        self.write(f"Level: {self.level}", align=ALIGNMENT, font=FONT)
